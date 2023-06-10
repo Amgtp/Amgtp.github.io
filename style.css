@@ -13,7 +13,7 @@ body {
 .container {
     width: 100%;
     min-height: 100vh;
-    background-color: #f3f5f8;
+    background-color: hsl(0, 0%, 1%);
 }
 nav{
     display: flex;
@@ -24,17 +24,14 @@ nav{
     z-index: 111;
 }
 .logo{
-    display: flex;
-    font-size: 40px;
-    font-weight: 800px;
-    color: #3d535f;
-    letter-spacing: 3px;
-    cursor: pointer;
-    text-transform: uppercase;
+  display: flex;
+
 }
+
+
 b{
     font-size: 70px;
-    color: #7f00ff;
+    color: #ff6600;
     
 }
 .navItems {
@@ -46,18 +43,18 @@ b{
 }
 .navItems li a{
     font-size: 25px;
-    color: #3d535f;
+    color: #ffffff;
     letter-spacing: 3px;
     text-decoration: none;
     text-transform: capitalize;
 }
 .navItems li:hover a,
 .links a:hover{
-color: #7f00ff;
+color: #ff6600;
 }
 .links a{
 font-size: 30px;
-color: #3d535f;
+color: #ffffff;
 margin: 25px 10px;
 }
 
@@ -78,7 +75,7 @@ margin: 25px 10px;
     border-radius: 50%;
     left: -12%;
     top: 40%;
-    background: linear-gradient(45deg,#7f00ff,pink);
+    background: linear-gradient(45deg,#ff6600,rgb(0, 0, 0));
     animation: object1 6s linear infinite;  
 }
 .wrapper::after{
@@ -89,7 +86,7 @@ margin: 25px 10px;
     border-radius: 50%;
     left: 35%;
     top: 12%;
-    background: linear-gradient(45deg,#7f00ff,pink);
+    background: linear-gradient(45deg,#ff6600,rgb(0, 0, 0));
     animation: object2 6s linear infinite; 
 }
 @keyframes object1{
@@ -116,7 +113,7 @@ margin: 25px 10px;
     position: relative;
     font-size: 35px;
     letter-spacing: 5px;
-    color: #3d535f;
+    color: #ffffff;
 }
 .topline::after{
     position: absolute;
@@ -124,23 +121,26 @@ margin: 25px 10px;
     height: 4px;
     width: 45px;
     bottom: 10px;
-    background-color: #7f00ff;
+    background-color: #ff6600;
 }
 h1{
     display: block;
     font-size: 7em;
     font-weight: 900;
-    color: #3d535f;
+    color: #ffffff;
 }
 .multiText {
-    color: #7f00ff;
+    color: #ff6600;
     text-transform: capitalize;
 }
 p{
     display: block;
     width: 90%;
     font-size: 1.2em;
-    color: #3d535f;
+    color: #f3f3f3;
+}
+.highlight{
+    color: #ff6600;
 }
 .btns{
     width: 100%;
@@ -153,8 +153,8 @@ button{
     cursor: pointer;
     font-size: 25px;
     font-weight: 400;
-    color: #fff;
-    background-color: #3d535f;
+    color: #000000;
+    background-color: #ffffff;
     padding: 8px 14px;
     margin: 40px 5px;
     letter-spacing: 2px;
@@ -162,7 +162,8 @@ button{
     box-shadow: 0 15px 10px rgba(0,0,0,0.4);
 }
 button:hover{
-background-color: #7f00ff;
+background-color: #ff6600;
+color: #ffffff;
 }
 .imgbox{
     position: relative;
@@ -187,8 +188,9 @@ background-color: #7f00ff;
     position: absolute;
     top: 50%;
     left: 50%;
-    transform: translate(-50%,-50%) rotate(-35deg);
-    width: 100%;
+    transform: translate(-50%,-30%) ;
+    width: 250%;
+    height: 200%;
     
     animation: animate 4s linear infinite;
 }
@@ -196,6 +198,6 @@ background-color: #7f00ff;
     50%{
         top: 49%;
         left: 51%;
-        width: 105%;
+        width: 260%;
     }  
   }
