@@ -2,25 +2,56 @@
 <html Lang="en">
 <head>
     <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <!-- given below is Font Awesome CDN Link -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-    <link rel="stylesheet" href="style.css">
-    <title>Gautam Shah|Home</title>
+    <link rel="stylesheet" href="contactme.css">
+    <title>Gautam Shah|Connect with me</title>
+    <script type="text/javascript"
+        src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js">
+    </script>
+    <script src="contact.js"></script>
+<script type="text/javascript">
+   (function(){
+      emailjs.init("lw49d0vcWU7x-yKu-");
+   })();
+</script>
 </head>
 <body>
     <div class="container">
-        <nav>
-            <div class="logo"><img src="Logo.png" alt=""> </div>
-            
-            <ul class="navItems">
-                <li><a href="index.html">home</a></li>
-                <li><a href="about.html">about</a></li>
-                <li><a href="project.html">projects</a></li>
-                <li><a href="blog.html">blog</a></li>
-            </ul>
-            <div class="links">
-                <a href="https://www.linkedin.com/in/gautam-shah-736bb8211" target="_blank"><i class="fab fa-linkedin"></i></a>
-                <a href="https://www.instagram.com/projectilluminate.me" target="_blank"><i class="fab fa-instagram"></i></a>
-                <a href="https://twitter.com/gautamshah_pvt" target="_blank"><i class="fab fa-twitter"></i></a>
-            </div>
-        </nav>
+      <div class="cursor outer"></div>
+      <div class="cursor inner"></div>
+      
+      <nav>
+          <div class="logo"><img src="logo.png" alt=""> </div>
+          
+          <ul class="navItems">
+              <li><a href="index.html">home</a></li>
+              <li><a href="about.html">about</a></li>
+              <li><a href="project.html">projects</a></li>
+              <li><a href="blog.html">blog</a></li>
+          </ul>
+          <div class="links">
+              <a href="https://www.linkedin.com/in/gautam-shah-736bb8211" target="_blank"><i class="fab fa-linkedin"></i></a>
+              <a href="https://www.instagram.com/projectilluminate.me" target="_blank"><i class="fab fa-instagram"></i></a>
+              <a href="https://twitter.com/illumiante_me" target="_blank"><i class="fab fa-twitter"></i></a>
+          </div>
+          <script src="cursor.js"></script>
+      </nav>
+      <div class="container2">
+        <form>
+            <h1>Contact Us Form</h1>
+            <input type="text" id="firstName" placeholder="First Name" required>
+            <input type="text" id="lastName" placeholder="Last Name" required>
+            <input type="email" id="email" placeholder="Email" required>
+            <input type="text" id="mobile" placeholder="Mobile" required>
+            <h4>Type Your Message Here...</h4>
+            <textarea id="message" required></textarea>
+            <button id="button" onclick="sendMail()">Send</button>
+        </form>
+    </div>
+    </div>
+
+  </body>
+  </html>

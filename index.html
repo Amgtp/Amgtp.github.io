@@ -3,13 +3,15 @@
 <head>
     
     <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <!-- given below is Font Awesome CDN Link -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="stylesheet" href="style.css">
     <title>Gautam Shah|Home</title>
 </head>
 <body>
-    <div class="loader"></div>
+    
     
     <div class="container">
         <div class="cursor outer"></div>
@@ -68,18 +70,6 @@
         })
     </script>
 
-    <script>
-        window.addEventListener("load", () => {
-            const loader = document.querySelector(".loader");
-          
-            loader.classList.add("loader--hidden");
-          
-            loader.addEventListener("transitionend", () => {
-              document.body.removeChild(loader);
-            });
-          });
-          
-        </script>
 </body>
 
 </html>
